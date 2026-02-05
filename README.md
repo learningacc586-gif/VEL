@@ -82,7 +82,7 @@ button:hover{
 
 <body>
 <audio id="bg-music" autoplay loop>
-  <source src="song.mp3" type="audio/mpeg">
+  <source src="darkhaast.mp3" type="audio/mpeg">
 </audio>
 
 <script>
