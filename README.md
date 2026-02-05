@@ -151,6 +151,12 @@ let screens = document.querySelectorAll('.screen');
 let current = 0;
 
 function nextScreen(){
+    const music = document.getElementById("bg-music");
+    if (music.paused) {
+        music.volume = 0.7;
+        music.play();
+    }
+
     screens[current].classList.remove('active');
     current++;
     screens[current].classList.add('active');
@@ -159,6 +165,7 @@ function nextScreen(){
         startCountdown();
     }
 }
+
 
 function startCountdown(){
     let c = 3;
